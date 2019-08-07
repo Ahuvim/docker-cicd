@@ -44,51 +44,51 @@ job('NodeJS Docker example') {
     }
 }
 
-pipelineJob('boilerplate-pipeline') {
+// pipelineJob('boilerplate-pipeline') {
 
 
 
-    def repo = "https://github.com/ahuvim/docker-cicd.git"
+//     def repo = "https://github.com/ahuvim/docker-cicd.git"
 
  
 
-    triggers {
+//     triggers {
 
-        scm('H/5 * * * *')
+//         scm('H/5 * * * *')
 
-    }
+//     }
 
-    description("Pipeline for repo")
+//     description("Pipeline for repo")
 
    
 
-    definition {
+//     definition {
 
-        cpsScm{
+//         cpsScm{
 
-            scm{
+//             scm{
 
-                git{
+//                 git{
 
-                    remote{
+//                     remote{
 
-                        url('git://github.com/ahuvim/docker-cicd.git')
+//                         url('git://github.com/ahuvim/docker-cicd.git')
 
-                        branches('master')
+//                         branches('master')
 
-                        }
+//                         }
 
-                    }
+//                     }
 
-                }
+//                 }
 
-            scriptPath("./basics/misc/Jenkinsfile")
+//             scriptPath("./basics/misc/Jenkinsfile")
 
-            }
+//             }
 
-        }
+//         }
 
-    }
+//     }
 
 pipelineJob('boilerplate-pipeline2') {
 
