@@ -128,7 +128,7 @@ pipelineJob('boilerplate-pipeline2') {
 
                 }
 
-            scriptPath("./basics/misc/Jenkinsfile2")
+            scriptPath("./basics/misc/Jenkinsfile.v2")
 
             }
 
