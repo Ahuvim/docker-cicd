@@ -33,7 +33,7 @@ job('NodeJS Docker example') {
     steps {
         dockerBuildAndPublish {
             repositoryName('ahuvim/maor-jb') //qa / dev
-            buildContext('./basics/')
+            buildContext('./basics')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('Ahuvim')
             forcePull(false)
