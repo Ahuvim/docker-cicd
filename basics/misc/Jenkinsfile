@@ -26,7 +26,7 @@ node {
 
    stage('docker build/push') {
 
-     docker.withRegistry('https://index.docker.io/v1/', 'ahuvim') {
+     docker.withRegistry('https://index.docker.io/v1/', 'Ahuvim') {
 
        def app = docker.build("ahuvim/maor-jb:${commit_id}", './basics').push()
 
